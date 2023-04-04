@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+  </head>
+  <body>
+    <%- include('includes/header') %>
+    <main>
+      <h1>All Posts</h1>
+      <div>
+        <% if (!books || books.length ===0) { %>
+        <p>NO posts found</p>
+        <a href="/new-book">add a book</a>
+
+        <% } else {%>
+        <ol>
+          <% for (const book of books ) { %>
+
+          <li><%- include('includes/book-item' , {book : book}) %></li>
+          <% } %>
+        </ol>
+        <% } %>
+      </div>
+    </main>
+  </body>
+</html>

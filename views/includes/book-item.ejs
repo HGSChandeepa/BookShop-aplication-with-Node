@@ -1,0 +1,14 @@
+<article>
+  <main>
+    <h1><%= book.title %></h1>
+    <p><%= book.pub_name %></p>
+    <p><%= book.summary %></p>
+
+    <div>
+      <a href="/books/<%= book.id %>/delete"> delete the book </a>
+
+      <a href="/books/<%= book.id %>/edit">Updated book</a>
+      <a href="/books/<%= book.id %>">more details</a>
+    </div>
+  </main>
+</article>

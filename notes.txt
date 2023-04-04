@@ -1,0 +1,22 @@
+1.create the templates and includes   (done)
+2.create the mysql database (done)
+3.config the app js file and include the ejs and middle ware and the
+routes (done)
+4.create the main / root route '/books'  >>> main home page and also we have to
+get the data of books and render as book items in the main page (done)
+
+5.create a new book route '/new-book'  and we have store the new 
+data in the database  << done
+
+6.create the book details page route '/books/:id' and fetch the data
+from the database and show the data in the book detail page << done
+
+7.edit the books route '/books/:id/edit' and we have to show the 
+current exisiting data in those feilds and after edit we have to
+update our database
+
+8.delete the book route 'books/:id/delete' and after delete we
+must update the database
+
+
+>>CRUD

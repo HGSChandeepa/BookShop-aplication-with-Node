@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+  </head>
+  <body>
+    <%- include('includes/header') %>
+    <main>
+      <h1>Delete the Book</h1>
+      <form action="/books/<%= book.id %>/delete" method="POST">
+        <button>delete the book</button>
+      </form>
+    </main>
+  </body>
+</html>
