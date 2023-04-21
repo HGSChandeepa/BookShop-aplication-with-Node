@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', { title: 'Update post' }) %>
+    <link rel="stylesheet" href="/styles/forms.css" />
+  </head>
+
+  <body>
+    <%- include('includes/header') %>
+    <main>
+      <h1>Detete your Post</h1>
+      <form action="/posts/<%= post._id %>/delete" method="POST">
+        <button class="btn delete">Delete the Post</button>
+      </form>
+    </main>
+  </body>
+</html>
